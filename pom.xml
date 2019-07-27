@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!--模型版本。maven2.0必须是这样写，现在是maven2唯一支持的版本-->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--继承的项目-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <!--项目组织的唯一标识符 ：对应JAVA的包的结构，是main目录里java的目录结构-->
+    <groupId>com.sky</groupId>
+    <!--项目的唯一标志：项目名-->
+    <artifactId>sky</artifactId>
+    <!--项目的版本号（简明）-->
+    <version>0.0.1-SNAPSHOT</version>
+    <!--打包的机制  默认为jar-->
+    <name>sky</name>
+    <!--项目描述-->
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <!-- 编码格式 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- jdk版本 -->
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+
+        <!--web应用基本环境配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--springboot热部署-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+            <scope>true</scope>
+        </dependency>
+
+        <!--图片工具-->
+        <dependency>
+            <groupId>net.coobird</groupId>
+            <artifactId>thumbnailator</artifactId>
+            <version>0.4.8</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!--使用的插件列表  此处直接用父项目的plugins-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
