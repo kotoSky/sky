@@ -3,9 +3,9 @@ package com.sky.file.controller;
 
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
@@ -22,7 +22,7 @@ import java.io.IOException;
  * @Description: TODO
  */
 
-@Controller
+@RestController
 public class FileController {
 
     @RequestMapping(path = "/img", method = RequestMethod.GET)

@@ -10,6 +10,7 @@
         <module>common</module>
         <module>srv</module>
         <module>file</module>
+        <module>learn</module>
     </modules>
 
     <!--继承的项目-->
