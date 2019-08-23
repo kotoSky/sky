@@ -1,10 +1,11 @@
-package com.sky.sky.controller;
+package com.sky.file.controller;
+
 
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Positions;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
@@ -17,17 +18,12 @@ import java.io.IOException;
 
 /**
  * @Auther: HJH
- * @Date: 2019/7/23
+ * @Date: 2019/8/23
  * @Description: TODO
  */
 
-@RestController
-public class IndexController {
-
-    @RequestMapping(path = "/", method = RequestMethod.GET)
-    String index() {
-        return "Hello Spring Boot";
-    }
+@Controller
+public class FileController {
 
     @RequestMapping(path = "/img", method = RequestMethod.GET)
     public void getImg(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -82,5 +78,4 @@ public class IndexController {
             }
         }
     }
-
 }

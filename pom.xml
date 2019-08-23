@@ -5,6 +5,13 @@
     <!--模型版本。maven2.0必须是这样写，现在是maven2唯一支持的版本-->
     <modelVersion>4.0.0</modelVersion>
 
+    <!--子模块-->
+    <modules>
+        <module>common</module>
+        <module>srv</module>
+        <module>file</module>
+    </modules>
+
     <!--继承的项目-->
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -20,6 +27,8 @@
     <!--项目的版本号（简明）-->
     <version>0.0.1-SNAPSHOT</version>
     <!--打包的机制  默认为jar-->
+    <packaging>pom</packaging>
+    <!--项目名称-->
     <name>sky</name>
     <!--项目描述-->
     <description>Demo project for Spring Boot</description>
@@ -34,16 +43,16 @@
 
     <dependencies>
 
-        <!--web应用基本环境配置-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!--springboot aop-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
 
         <!--springboot热部署-->
@@ -54,23 +63,6 @@
             <scope>true</scope>
         </dependency>
 
-        <!--图片工具-->
-        <dependency>
-            <groupId>net.coobird</groupId>
-            <artifactId>thumbnailator</artifactId>
-            <version>0.4.8</version>
-        </dependency>
-
     </dependencies>
-
-    <build>
-        <plugins>
-            <!--使用的插件列表  此处直接用父项目的plugins-->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
