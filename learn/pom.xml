@@ -12,9 +12,7 @@
     <artifactId>sky-learn</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>code</module>
-        <module>controller</module>
-        <module>dao</module>
+        <module>spring-aop</module>
     </modules>
 
 

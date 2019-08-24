@@ -13,6 +13,11 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>com.sky</groupId>
+            <artifactId>learn-spring-aop</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 
