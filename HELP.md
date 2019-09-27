@@ -1,14 +1,20 @@
-# Getting Started
+戒油子的救赎
+------
+在你最孤单最无望的时候，有一扇门会在你身边打开。（龙族Ⅰ·火之晨曦）
 
-### Reference Documentation
-For further reference, please consider the following sections:
+> * 死不可怕，可怕的是生不如死。
+> * 不经历黑暗的人，是无法懂得光明的。
+> * 得到后再失去，远比一无所有要痛苦的多。
+------
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
+## 不经历黑暗的人，是无法懂得光明的。
 
-### Guides
-The following guides illustrate how to use some features concretely:
+> * 坚强的意志和决心可以战胜一切困难。
+> * 执著的信念和无畏的心灵才是最强大的武器。
+> * 只有夺走你所拥有的一切，你才能摆脱世间一切浮躁与诱惑，经受千锤百炼，心如止水，透悟天地。
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
+### xy历史
+12岁的我被身边人带坏。
 
+### 初始js
+2011年12月十五岁的我在xy三年后接触到了js吧。
