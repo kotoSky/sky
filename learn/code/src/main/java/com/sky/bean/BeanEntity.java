@@ -26,4 +26,22 @@ public class BeanEntity {
     public void setB(Integer b) {
         this.b = b;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof BeanEntity)) return false;
+
+        BeanEntity that = (BeanEntity) o;
+
+        if (a != null ? !a.equals(that.a) : that.a != null) return false;
+        return b != null ? b.equals(that.b) : that.b == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = a != null ? a.hashCode() : 0;
+        result = 31 * result + (b != null ? b.hashCode() : 0);
+        return result;
+    }
 }
