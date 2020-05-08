@@ -14,7 +14,7 @@
 
 
     <modules>
-        <module>dao</module>
+        <module>mapper</module>
         <module>manager</module>
         <module>controller</module>
     </modules>
