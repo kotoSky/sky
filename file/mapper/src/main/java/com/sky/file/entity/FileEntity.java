@@ -1,10 +1,8 @@
 package com.sky.file.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.common.entity.BaseEntity;
 
-@TableName(value = "t_file")
-public class FileEntity extends BaseEntity {
+//@TableName(value = "t_file")
+public class FileEntity {
     /**
      * 文件名称
      */
