@@ -1,8 +1,13 @@
-package com.common.result;
+package com.common.vo;
 
 import com.common.enums.ResultCode;
 import lombok.Data;
 
+/**
+ * @author kell
+ * @date 2020-05-31 11:10
+ * 统一返回结果
+ */
 @Data
 public class Result {
 
@@ -20,16 +25,16 @@ public class Result {
 
     public static Result success() {
         Result result = new Result();
-        result.setCode(ResultCode.success.getCode());
-        result.setMsg(ResultCode.success.getMsg());
+        result.setCode(ResultCode.SUCCESS.getCode());
+        result.setMsg(ResultCode.SUCCESS.getMsg());
         return result;
     }
 
     public static Result error() {
         Result result = new Result();
         result.setSuccess(Boolean.FALSE);
-        result.setCode(ResultCode.error.getCode());
-        result.setMsg(ResultCode.error.getMsg());
+        result.setCode(ResultCode.ERROR.getCode());
+        result.setMsg(ResultCode.ERROR.getMsg());
         return result;
     }
 
@@ -44,9 +49,9 @@ public class Result {
     }
 
     // 自定义状态
-    public Result status(Integer code, String msg) {
-        this.setCode(code);
-        this.setMsg(msg);
+    public Result status(ResultCode resultCode) {
+        this.setCode(resultCode.getCode());
+        this.setMsg(resultCode.getMsg());
         return this;
     }
 
@@ -61,11 +66,4 @@ public class Result {
         this.setCode(code);
         return this;
     }
-
-    // 自定义返回结果
-    public Result isSuccess(Boolean success) {
-        this.setSuccess(success);
-        return this;
-    }
-
 }
