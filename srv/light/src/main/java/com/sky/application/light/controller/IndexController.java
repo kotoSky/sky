@@ -21,6 +21,6 @@ public class IndexController {
 
     @RequestMapping(path = "/success", method = RequestMethod.GET)
     Result success() {
-        return Result.success().data("请求成功咯！").isSuccess(false);
+        return Result.success().data("请求成功咯！");
     }
 }
