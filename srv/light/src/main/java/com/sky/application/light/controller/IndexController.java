@@ -1,6 +1,6 @@
 package com.sky.application.light.controller;
 
-import com.common.result.Result;
+import com.common.vo.Result;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
