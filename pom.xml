@@ -11,6 +11,7 @@
         <module>srv</module>
         <module>file</module>
         <module>learn</module>
+        <module>learn/robot</module>
     </modules>
 
     <!--继承的项目-->
